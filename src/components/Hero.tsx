@@ -101,7 +101,7 @@ const Hero = () => {
 
           <div className="flex gap-4 pt-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Dipanjan2004"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-card border border-border rounded-lg hover:border-primary transition-colors duration-300"
@@ -109,7 +109,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dipan04/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-card border border-border rounded-lg hover:border-primary transition-colors duration-300"

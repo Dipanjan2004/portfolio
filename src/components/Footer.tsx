@@ -24,10 +24,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-background border border-border rounded-lg hover:border-primary transition-colors duration-300">
+              <a href="https://github.com/Dipanjan2004" target="_blank" rel="noopener noreferrer" className="p-3 bg-background border border-border rounded-lg hover:border-primary transition-colors duration-300">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-background border border-border rounded-lg hover:border-primary transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/dipan04/" target="_blank" rel="noopener noreferrer" className="p-3 bg-background border border-border rounded-lg hover:border-primary transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
               <a href="mailto:chowdhurydipanjan173@gmail.com" className="p-3 bg-background border border-border rounded-lg hover:border-primary transition-colors duration-300">

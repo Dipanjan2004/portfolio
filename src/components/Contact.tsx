@@ -24,8 +24,8 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="section-padding overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
             Let's <span className="gradient-text">Connect</span>
@@ -35,30 +35,30 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-12 min-w-0">
+          <div className="space-y-8 min-w-0">
             <div className="space-y-6">
               {contactInfo.map((info, index) => {
                 const Icon = info.icon;
                 return (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary transition-colors duration-300"
+                    className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary transition-colors duration-300 min-w-0"
                   >
                     <div className="p-3 bg-primary/10 rounded-lg">
                       <Icon className="text-primary" size={24} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-lg font-semibold hover:gradient-text transition-all duration-300"
+                          className="text-lg font-semibold hover:gradient-text transition-all duration-300 break-words max-w-full"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-lg font-semibold">{info.value}</p>
+                        <p className="text-lg font-semibold break-words max-w-full">{info.value}</p>
                       )}
                     </div>
                   </div>
@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-card border border-border rounded-2xl p-8">
+          <div className="bg-card border border-border rounded-2xl p-8 min-w-0">
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form className="space-y-6">
               <div className="space-y-2">
@@ -99,7 +99,7 @@ const Contact = () => {
                 <input
                   id="name"
                   type="text"
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 min-w-0"
                   placeholder="Your name"
                 />
               </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                 <input
                   id="email"
                   type="email"
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 min-w-0"
                   placeholder="your@email.com"
                 />
               </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={5}
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 resize-none min-w-0"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
